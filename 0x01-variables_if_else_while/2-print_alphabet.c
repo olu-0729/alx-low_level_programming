@@ -1,30 +1,21 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
+
 /**
- * main - Prints 'zero, positive or negative'.
+ * main - prints the alphabet in lowercase, followed by a new line.
  *
  * Return: 0
  */
 int main(void)
 {
-	int n;
+	char l;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	if (n > 0)
+	l = 'a';
+	while (l <= 'z')
 	{
-		printf("%i is positive\n", n);
+		putchar(l);
+		l++;
 	}
-	else if (n == 0)
-	{
-		printf("%i is zero\n", n);
-	}
-	else if (n < 0)
-	{
-		printf("%i is negative\n", n);
-	}
-
+	putchar('\n');
 	return (0);
 }
