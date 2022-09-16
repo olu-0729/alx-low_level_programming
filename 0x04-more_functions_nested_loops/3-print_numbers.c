@@ -12,8 +12,3 @@ void print_numbers(void)
 		_putchar(num);
 	_putchar('\n');
 }
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-
-
